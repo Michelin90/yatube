@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth import get_user_model
+from django.db.models import UniqueConstraint
+
 from yatube.settings import NUMBER_OF_SYMBOLS
 from core.models import CreatedModel
 
@@ -86,3 +88,6 @@ class Follow(models.Model):
         verbose_name='Автор',
         on_delete=models.CASCADE,
     )
+
+    class Meta:
+        UniqueConstraint(fields=['author', 'user'], name='unique_following')
