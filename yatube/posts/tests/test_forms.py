@@ -1,12 +1,12 @@
-from django.test import Client, TestCase, override_settings
-from django.contrib.auth import get_user_model
-from django.urls import reverse
-from posts.models import Post, Group, Comment
-from django.conf import settings
-from django.core.files.uploadedfile import SimpleUploadedFile
-
 import shutil
 import tempfile
+
+from django.conf import settings
+from django.contrib.auth import get_user_model
+from django.core.files.uploadedfile import SimpleUploadedFile
+from django.test import Client, TestCase, override_settings
+from django.urls import reverse
+from posts.models import Comment, Group, Post
 
 User = get_user_model()
 NEW_TEXT_FOR_POST = 'new_text'
