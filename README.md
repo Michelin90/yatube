@@ -1,4 +1,5 @@
-![example workflow](https://github.com/Michelin90/yatube/actions/workflows/main.yml/badge.svg?style=for-the-badge)
+![example workflow](https://github.com/Michelin90/yatube/actions/workflows/python-app.yml
+/badge.svg?style=for-the-badge)
 # YaTube
 Cоциальная сеть для ведения текстовых блогов с пользовательским web-интрефейсом.
 
