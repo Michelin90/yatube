@@ -1,4 +1,4 @@
-name: yatube
+name: yatube_workflow
 
 on: [push]
 
